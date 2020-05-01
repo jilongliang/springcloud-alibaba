@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: nacos-config
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.231:8848
+      config:
+        server-addr: 192.168.1.231:8848
+        file-extension: yaml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
